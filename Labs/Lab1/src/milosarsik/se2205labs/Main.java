@@ -6,8 +6,9 @@ public class Main
 {
     public static void main(String[] args)
     {
-        System.out.println(newtonSqrt(4,4,0.001));
+        System.out.println(newtonSqrt(10,3,0.001));
 
+        System.out.println(findMinChangeCoins(1,1));
     }
 
     public static double newtonSqrt(double x, double a, double eps)
