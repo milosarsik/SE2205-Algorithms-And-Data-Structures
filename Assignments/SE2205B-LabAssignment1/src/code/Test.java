@@ -9,20 +9,30 @@ public class Test
 {
     public static void main(String[] args)throws Exception
     {
-        int testPart = Integer.parseInt(args[0]);
+        //int testPart = Integer.parseInt(args[0]);
+
+        // this value here will vary for each different test, make sure to change
+        int testPart = 1;
 
         Assignment1 a1 = new Assignment1();
+
+        // matrix size (the size is 10 for part 1 and 8 for part 2)
         int n = 8;
+
+        // the 2D array that holds the matrix
         int[][] matrix;
 
-        if(testPart==1)
+        // Testing begins here
+        if(testPart==1)                                                     // PASSED
         {
-            matrix=a1.initMatrix(n);
+            matrix = a1.initMatrix(n);
+
             a1.printMatrix(n, matrix);
         }
         else if(testPart==2)
         {
-            matrix=a1.readMatrix("matrix1.txt",n);
+            matrix = a1.readMatrix("matrix1.txt",n);
+
             a1.printMatrix(n,matrix);
         }
         else if(testPart==3)
