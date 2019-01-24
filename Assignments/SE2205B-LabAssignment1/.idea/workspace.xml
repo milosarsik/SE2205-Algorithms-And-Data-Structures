@@ -26,6 +26,7 @@
     <option name="HIDE_WARNINGS" value="true" />
   </component>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="FUSProjectUsageTrigger">
     <session id="-1569468781">
       <usages-collector id="statistics.lifecycle.project">
@@ -48,6 +49,8 @@
       </usages-collector>
     </session>
   </component>
+=======
+>>>>>>> b4426947cf28abb5f9ee62e36bafab5e312f0d9f
 =======
 >>>>>>> b4426947cf28abb5f9ee62e36bafab5e312f0d9f
   <component name="FileEditorManager">
@@ -149,7 +152,11 @@
   </component>
   <component name="PropertiesComponent">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548303036006" />
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548307885157" />
+>>>>>>> b4426947cf28abb5f9ee62e36bafab5e312f0d9f
 =======
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548307885157" />
 >>>>>>> b4426947cf28abb5f9ee62e36bafab5e312f0d9f
@@ -212,8 +219,11 @@
   </component>
   <component name="ToolWindowManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
 =======
+=======
+>>>>>>> b4426947cf28abb5f9ee62e36bafab5e312f0d9f
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
 >>>>>>> b4426947cf28abb5f9ee62e36bafab5e312f0d9f
@@ -257,6 +267,7 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/matrix1.txt">
+<<<<<<< HEAD
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
@@ -268,6 +279,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/expOutput/Part2.txt">
       <provider selected="true" editor-type-id="text-editor">
+=======
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/expOutput/Part3_1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/expOutput/Part2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+>>>>>>> b4426947cf28abb5f9ee62e36bafab5e312f0d9f
         <state relative-caret-position="119">
           <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
         </state>
