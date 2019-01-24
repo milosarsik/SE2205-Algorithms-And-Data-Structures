@@ -12,7 +12,7 @@ public class Test
         //int testPart = Integer.parseInt(args[0]);
 
         // this value here will vary for each different test, make sure to change
-        int testPart = 1;
+        int testPart = 2;
 
         Assignment1 a1 = new Assignment1();
 
@@ -31,7 +31,7 @@ public class Test
         }
         else if(testPart==2)
         {
-            matrix = a1.readMatrix("matrix1.txt",n);
+            matrix = a1.readMatrix("src/matrix1.txt",n);
 
             a1.printMatrix(n,matrix);
         }

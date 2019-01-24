@@ -1,5 +1,8 @@
 package code;
 
+import java.io.File;
+import java.util.Scanner;
+
 public class Assignment1
 {
     // denseMatrixMult -
@@ -58,13 +61,23 @@ public class Assignment1
     // readMatrix - read the content of a data ﬁle called filename and store the content of this ﬁle in a 2D array of size n
     public int[][] readMatrix(String filename, int n) throws Exception
     {
-        // create matrix
 
-        // read in file
+        Scanner inp = new Scanner (new File(filename));//Creates scanner object called inp
 
-        // etc
+        int matrix[][]=new int [n][n];//creates an array called matrix to store the values
 
-        return null;
+        for(int i = 0; i < n; ++i)
+        {
+            for(int j = 0; j < n; ++j)
+            {
+                if(inp.hasNextInt())
+                {
+                    matrix[i][j] = inp.nextInt();//Stores values in matrix
+                }
+            }
+        }
+
+        return matrix;
     }
 }
 
