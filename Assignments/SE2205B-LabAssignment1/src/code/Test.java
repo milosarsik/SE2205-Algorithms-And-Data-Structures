@@ -1,5 +1,7 @@
-// Milos Arsik - marsik - 250953645
-// Cyriac Jinson - cjinson - (STUDENT #)
+/* 
+Milos Arsik - marsik - 250953645
+Cyriac Jinson - cjinson - (STUDENT #)
+*/
 
 package code;
 
