@@ -12,7 +12,7 @@ public class Test
         //int testPart = Integer.parseInt(args[0]);
 
         // this value here will vary for each different test, make sure to change
-        int testPart = 2;
+        int testPart = 3;
 
         Assignment1 a1 = new Assignment1();
 
@@ -35,20 +35,21 @@ public class Test
 
             a1.printMatrix(n,matrix);
         }
-        else if(testPart==3)
+        else if(testPart==3 )
         {
-            int nextPart = Integer.parseInt(args[1]);
+            //int nextPart = Integer.parseInt(args[1]);
+            int nextPart=2;
             if(nextPart==1){
-                int[][] matrix1=a1.readMatrix("matrix1.txt",n);
-                int[][] matrix2=a1.readMatrix("matrix2.txt",n);
+                int[][] matrix1=a1.readMatrix("src/matrix1.txt",n);
+                int[][] matrix2=a1.readMatrix("src/matrix2.txt",n);
                 int[][] sumMatrix = a1.sum(matrix1, matrix2, 1, 1, 0, 1, 3);
                 a1.printMatrix(n,matrix1);
                 a1.printMatrix(n,matrix2);
                 a1.printMatrix(3,sumMatrix);
             }
             else {
-                int[][] matrix1=a1.readMatrix("matrix1.txt",n);
-                int[][] matrix2=a1.readMatrix("matrix2.txt",n);
+                int[][] matrix1=a1.readMatrix("src/matrix1.txt",n);
+                int[][] matrix2=a1.readMatrix("src/matrix2.txt",n);
                 int[][] sumMatrix = a1.sub(matrix1, matrix2, 1, 1, 0, 1, 3);
                 a1.printMatrix(n,matrix1);
                 a1.printMatrix(n,matrix2);
@@ -56,8 +57,8 @@ public class Test
             }
         }
         else {
-            int[][] matrix1=a1.readMatrix("matrix1.txt",n);
-            int[][] matrix2=a1.readMatrix("matrix2.txt",n);
+            int[][] matrix1=a1.readMatrix("src/matrix1.txt",n);
+            int[][] matrix2=a1.readMatrix("src/matrix2.txt",n);
             int[][] resultingMatrix=a1.denseMatrixMult(matrix1, matrix2, n);
             a1.printMatrix(n,resultingMatrix);
         }

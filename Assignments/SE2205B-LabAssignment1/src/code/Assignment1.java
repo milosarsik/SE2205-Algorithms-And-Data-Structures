@@ -14,13 +14,33 @@ public class Assignment1
     // sum -
     public int[][] sum(int[][] A, int[][] B, int x1, int y1, int x2, int y2, int n)
     {
-        return null;
+
+        int sumMatrix[][]= new int[n][n];//Creates matrix to be returned
+        for(int i = 0; i < n; i ++)
+        {
+            for(int j = 0; j < n; j++)
+            {
+               sumMatrix[i][j] = A[i+x1][j+y1]+B[i+x2][j+y2];//adds matrices
+            }
+        }
+
+        return sumMatrix;
     }
 
     // sub -
     public int[][] sub(int[][] A, int[][] B, int x1, int y1, int x2, int y2, int n)
     {
-        return null;
+        int subMatrix[][]= new int[n][n];//Creates matrix to be returned
+        for(int i = 0; i < n; i ++)
+        {
+            for(int j = 0; j < n; j++)
+            {
+                subMatrix[i][j] = A[i+x1][j+y1]-B[i+x2][j+y2];//subtracts matrices
+            }
+        }
+
+
+        return subMatrix;
     }
 
     // initMatrix - a 2D array of size n will be initialized
