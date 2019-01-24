@@ -29,16 +29,17 @@ public class Test
 
             a1.printMatrix(n, matrix);
         }
-        else if(testPart==2)
+        else if(testPart==2)                                                // PASSED
         {
             matrix = a1.readMatrix("src/matrix1.txt",n);
 
             a1.printMatrix(n,matrix);
         }
-        else if(testPart==3 )
+        else if(testPart==3 )                                               // PASSED
         {
             //int nextPart = Integer.parseInt(args[1]);
-            int nextPart=2;
+            int nextPart = 2;
+
             if(nextPart==1){
                 int[][] matrix1=a1.readMatrix("src/matrix1.txt",n);
                 int[][] matrix2=a1.readMatrix("src/matrix2.txt",n);
@@ -56,7 +57,7 @@ public class Test
                 a1.printMatrix(3,sumMatrix);
             }
         }
-        else {
+        else {                                                              //
             int[][] matrix1=a1.readMatrix("src/matrix1.txt",n);
             int[][] matrix2=a1.readMatrix("src/matrix2.txt",n);
             int[][] resultingMatrix=a1.denseMatrixMult(matrix1, matrix2, n);

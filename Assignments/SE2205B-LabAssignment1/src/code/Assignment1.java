@@ -11,34 +11,38 @@ public class Assignment1
         return null;
     }
 
-    // sum -
+    // sum - addition of two matrices
     public int[][] sum(int[][] A, int[][] B, int x1, int y1, int x2, int y2, int n)
     {
+        // creates matrix to be returned
+        int sumMatrix[][]= new int[n][n];
 
-        int sumMatrix[][]= new int[n][n];//Creates matrix to be returned
         for(int i = 0; i < n; i ++)
         {
             for(int j = 0; j < n; j++)
             {
-               sumMatrix[i][j] = A[i+x1][j+y1]+B[i+x2][j+y2];//adds matrices
+               // adds matrices
+               sumMatrix[i][j] = A[i+x1][j+y1]+B[i+x2][j+y2];
             }
         }
 
         return sumMatrix;
     }
 
-    // sub -
+    // sub - subtraction of two matrices
     public int[][] sub(int[][] A, int[][] B, int x1, int y1, int x2, int y2, int n)
     {
-        int subMatrix[][]= new int[n][n];//Creates matrix to be returned
+        // creates matrix to be returned
+        int subMatrix[][]= new int[n][n];
+
         for(int i = 0; i < n; i ++)
         {
             for(int j = 0; j < n; j++)
             {
-                subMatrix[i][j] = A[i+x1][j+y1]-B[i+x2][j+y2];//subtracts matrices
+                //subtracts matrices
+                subMatrix[i][j] = A[i+x1][j+y1]-B[i+x2][j+y2];
             }
         }
-
 
         return subMatrix;
     }
@@ -58,7 +62,6 @@ public class Assignment1
             }
         }
 
-        // returning the matrix
         return matrix;
     }
 
@@ -81,8 +84,8 @@ public class Assignment1
     // readMatrix - read the content of a data ﬁle called filename and store the content of this ﬁle in a 2D array of size n
     public int[][] readMatrix(String filename, int n) throws Exception
     {
-
-        Scanner inp = new Scanner (new File(filename));//Creates scanner object called inp
+        // creates scanner object called read
+        Scanner read = new Scanner (new File(filename));
 
         int matrix[][]=new int [n][n];//creates an array called matrix to store the values
 
@@ -90,9 +93,10 @@ public class Assignment1
         {
             for(int j = 0; j < n; ++j)
             {
-                if(inp.hasNextInt())
+                if(read.hasNextInt())
                 {
-                    matrix[i][j] = inp.nextInt();//Stores values in matrix
+                    // stores values in matrix
+                    matrix[i][j] = read.nextInt();
                 }
             }
         }
