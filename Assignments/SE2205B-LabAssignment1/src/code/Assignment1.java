@@ -18,16 +18,16 @@ public class Assignment1
         else
         {
             // matrix A
-            int[][] A00 = new int[size / 2][size / 2];
-            int[][] A01 = new int[size / 2][size / 2];
-            int[][] A10 = new int[size / 2][size / 2];
-            int[][] A11 = new int[size / 2][size / 2];
+            int[][] A00 = new int[size / 2][size / 2];//a
+            int[][] A01 = new int[size / 2][size / 2];//b
+            int[][] A10 = new int[size / 2][size / 2];//c
+            int[][] A11 = new int[size / 2][size / 2];//d
 
             // matrix B
-            int[][] B00 = new int[size / 2][size / 2];
-            int[][] B01 = new int[size / 2][size / 2];
-            int[][] B10 = new int[size / 2][size / 2];
-            int[][] B11 = new int[size / 2][size / 2];
+            int[][] B00 = new int[size / 2][size / 2];//e
+            int[][] B01 = new int[size / 2][size / 2];//f
+            int[][] B10 = new int[size / 2][size / 2];//g
+            int[][] B11 = new int[size / 2][size / 2];//h
 
             // dividing matrix A into 4 parts
             divideArray(A, A00, 0, 0);
@@ -41,13 +41,13 @@ public class Assignment1
             divideArray(B, B10, size / 2, 0);
             divideArray(B, B11, size / 2, size / 2);
 
-            int[][] p1 = denseMatrixMult(addMatrices(a, d), addMatrices(e, h));
-            int[][] p2 = denseMatrixMult(addMatrices(c,d),e);
-            int[][] p3 = denseMatrixMult(a, subMatrices(f, h));
-            int[][] p4 = denseMatrixMult(d, subMatrices(g, e));
-            int[][] p5 = denseMatrixMult(addMatrices(a,b), h);
-            int[][] p6 = denseMatrixMult(subMatrices(c, a), addMatrices(e, f));
-            int[][] p7 = denseMatrixMult(subMatrices(b, d), addMatrices(g, h));
+            int[][] p1 = denseMatrixMult(sum(A00, A11,0,0,0,0,size/2), sum(B00, B11,0,0,0,0,size/2),size/2);
+            int[][] p2 = denseMatrixMult(sum(A10,A11,0,0,0,0,size/2),B00,size/2);
+            int[][] p3 = denseMatrixMult(A00, sub(B01, B11,0,0,0,0,size/2),size/2);
+            int[][] p4 = denseMatrixMult(A11, sub(B10, B00,0,0,0,0,size/2),size/2);
+            int[][] p5 = denseMatrixMult(sum(A00,A01,0,0,0,0,size/2), B11,size/2);
+            int[][] p6 = denseMatrixMult(sub(A10, A00,0,0,0,0,size/2), sum(B00, B01,0,0,0,0,size/2),size/2);
+            int[][] p7 = denseMatrixMult(sub(A01, A11,0,0,0,0,size/2), sum(B10, B11,0,0,0,0,size/2), size/2);
 
         }
         return matrix;
