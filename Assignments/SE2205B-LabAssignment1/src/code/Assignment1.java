@@ -17,19 +17,48 @@ public class Assignment1
         }
         else
         {
-            int[][] sub1a = new int[size / 2][size / 2];
-            int[][] sub2a = new int[size / 2][size / 2];
-            int[][] sub3a = new int[size / 2][size / 2];
-            int[][] sub4a = new int[size / 2][size / 2];
+            // matrix A
+            int[][] A00 = new int[size / 2][size / 2];
+            int[][] A01 = new int[size / 2][size / 2];
+            int[][] A10 = new int[size / 2][size / 2];
+            int[][] A11 = new int[size / 2][size / 2];
 
-            // second matrix
-            int[][] sub1b = new int[size / 2][size / 2];
-            int[][] sub2b = new int[size / 2][size / 2];
-            int[][] sub3b = new int[size / 2][size / 2];
-            int[][] sub4b = new int[size / 2][size / 2];
+            // matrix B
+            int[][] B00 = new int[size / 2][size / 2];
+            int[][] B01 = new int[size / 2][size / 2];
+            int[][] B10 = new int[size / 2][size / 2];
+            int[][] B11 = new int[size / 2][size / 2];
+
+            // dividing matrix A into 4 parts
+            divideArray(A, A00, 0, 0);
+            divideArray(A, A01, 0, size / 2);
+            divideArray(A, A10, size / 2, 0);
+            divideArray(A, A11, size/ 2, size / 2);
+
+            // dividing matrix B into 4 parts
+            divideArray(B, B00, 0, 0);
+            divideArray(B, B01, 0, size / 2);
+            divideArray(B, B10, size / 2, 0);
+            divideArray(B, B11, size / 2, size / 2);
+
+            int[][] p1 = denseMatrixMult(addMatrices(a, d), addMatrices(e, h));
+            int[][] p2 = denseMatrixMult(addMatrices(c,d),e);
+            int[][] p3 = denseMatrixMult(a, subMatrices(f, h));
+            int[][] p4 = denseMatrixMult(d, subMatrices(g, e));
+            int[][] p5 = denseMatrixMult(addMatrices(a,b), h);
+            int[][] p6 = denseMatrixMult(subMatrices(c, a), addMatrices(e, f));
+            int[][] p7 = denseMatrixMult(subMatrices(b, d), addMatrices(g, h));
 
         }
         return matrix;
+    }
+
+    // divideArray - splits the array
+    public static void divideArray(int[][] P, int[][] C, int iB, int jB)
+    {
+        for(int i1 = 0, i2 = iB; i1 < C.length; i1++, i2++)
+            for(int j1 = 0, j2 = jB; j1 < C.length; j1++, j2++)
+                C[i1][j1] = P[i2][j2];
     }
 
 
