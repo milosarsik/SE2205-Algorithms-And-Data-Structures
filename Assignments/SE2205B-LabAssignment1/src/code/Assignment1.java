@@ -8,8 +8,9 @@ public class Assignment1
     // denseMatrixMult -
     public int[][] denseMatrixMult(int[][] A, int[][] B, int size)
     {
-        if (n == 2)
+        if (size == 2)
         {
+            // HELLLOOOOO
             System.out.println("n = 2");
         }
         else
@@ -20,7 +21,7 @@ public class Assignment1
     }
     public void split()
     {
-        
+
     }
 
     // sum - addition of two matrices
