@@ -8,7 +8,19 @@ public class Assignment1
     // denseMatrixMult -
     public int[][] denseMatrixMult(int[][] A, int[][] B, int size)
     {
+        if (n == 2)
+        {
+            System.out.println("n = 2");
+        }
+        else
+        {
+
+        }
         return null;
+    }
+    public void split()
+    {
+        
     }
 
     // sum - addition of two matrices
