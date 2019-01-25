@@ -8,21 +8,30 @@ public class Assignment1
     // denseMatrixMult -
     public int[][] denseMatrixMult(int[][] A, int[][] B, int size)
     {
-        if (size == 2)
+
+        int matrix[][]=new int [size][size];
+        if (size == 1)
         {
-            // HELLLOOOOO
-            System.out.println("n = 2");
+
+            matrix[0][0] = A[0][0] * B[0][0];
         }
         else
         {
+            int[][] sub1a = new int[size / 2][size / 2];
+            int[][] sub2a = new int[size / 2][size / 2];
+            int[][] sub3a = new int[size / 2][size / 2];
+            int[][] sub4a = new int[size / 2][size / 2];
+
+            // second matrix
+            int[][] sub1b = new int[size / 2][size / 2];
+            int[][] sub2b = new int[size / 2][size / 2];
+            int[][] sub3b = new int[size / 2][size / 2];
+            int[][] sub4b = new int[size / 2][size / 2];
 
         }
-        return null;
+        return matrix;
     }
-    public void split()
-    {
 
-    }
 
     // sum - addition of two matrices
     public int[][] sum(int[][] A, int[][] B, int x1, int y1, int x2, int y2, int n)
