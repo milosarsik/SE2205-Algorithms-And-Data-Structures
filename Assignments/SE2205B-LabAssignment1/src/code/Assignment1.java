@@ -10,9 +10,10 @@ public class Assignment1
     {
 
         int matrix[][]=new int [size][size];
+
+        // base case
         if (size == 1)
         {
-
             matrix[0][0] = A[0][0] * B[0][0];
         }
         else
@@ -41,16 +42,29 @@ public class Assignment1
             divideArray(B, B10, size / 2, 0);
             divideArray(B, B11, size / 2, size / 2);
 
-            int[][] p1 = denseMatrixMult(sum(A00, A11,0,0,0,0,size/2), sum(B00, B11,0,0,0,0,size/2),size/2);
-            int[][] p2 = denseMatrixMult(sum(A10,A11,0,0,0,0,size/2),B00,size/2);
-            int[][] p3 = denseMatrixMult(A00, sub(B01, B11,0,0,0,0,size/2),size/2);
-            int[][] p4 = denseMatrixMult(A11, sub(B10, B00,0,0,0,0,size/2),size/2);
-            int[][] p5 = denseMatrixMult(sum(A00,A01,0,0,0,0,size/2), B11,size/2);
-            int[][] p6 = denseMatrixMult(sub(A10, A00,0,0,0,0,size/2), sum(B00, B01,0,0,0,0,size/2),size/2);
-            int[][] p7 = denseMatrixMult(sub(A01, A11,0,0,0,0,size/2), sum(B10, B11,0,0,0,0,size/2), size/2);
 
+            // matrix multiplication operations
+            int[][] M0 = denseMatrixMult(sum(A00, A11,0,0,0,0,size/2), sum(B00, B11,0,0,0,0,size/2),size/2);
+            int[][] M1 = denseMatrixMult(sum(A10,A11,0,0,0,0,size/2),B00,size/2);
+            int[][] M2 = denseMatrixMult(A00, sub(B01, B11,0,0,0,0,size/2),size/2);
+            int[][] M3 = denseMatrixMult(A11, sub(B10, B00,0,0,0,0,size/2),size/2);
+            int[][] M4 = denseMatrixMult(sum(A00,A01,0,0,0,0,size/2), B11,size/2);
+            int[][] M5 = denseMatrixMult(sub(A10, A00,0,0,0,0,size/2), sum(B00, B01,0,0,0,0,size/2),size/2);
+            int[][] M6 = denseMatrixMult(sub(A01, A11,0,0,0,0,size/2), sum(B10, B11,0,0,0,0,size/2), size/2);
+
+            // combine matrix multiplications from the previous block to calculate the resultant matrix
+            int[][] C11 = sum(sub(sum(M0, M3,0,0,0,0,size/2), M4,0,0,0,0,size/2), M6,0,0,0,0,size/2);
+            int[][] C12 = sum(M2, M4,0,0,0,0,size/2);
+            int[][] C21 = sum(M1, M3,0,0,0,0,size/2);
+            int[][] C22 = sum(sub(sum(M0, M2,0,0,0,0,size/2), M1,0,0,0,0,size/2), M5,0,0,0,0,size/2);
+
+            // merges the C sub matrices
+            mergeArray(C11, matrix, 0, 0);
+            mergeArray(C12, matrix, 0, size / 2);
+            mergeArray(C21, matrix, size / 2, 0);
+            mergeArray(C22, matrix, size / 2, size / 2);
         }
-        return matrix;
+                return matrix;
     }
 
     // divideArray - splits the array
@@ -138,7 +152,8 @@ public class Assignment1
         // creates scanner object called read
         Scanner read = new Scanner (new File(filename));
 
-        int matrix[][]=new int [n][n];//creates an array called matrix to store the values
+        //creates an array called matrix to store the values
+        int matrix[][]=new int [n][n];
 
         for(int i = 0; i < n; ++i)
         {
@@ -154,5 +169,19 @@ public class Assignment1
 
         return matrix;
     }
+
+    // merges two arrays from the given starting positions
+    public static void mergeArray(int[][] C, int[][] P, int iB, int jB)
+    {
+        for(int i1 = 0, i2 = iB; i1 < C.length; i1++, i2++)
+        {
+            for (int j1 = 0, j2 = jB; j1 < C.length; j1++, j2++)
+            {
+                P[i2][j2] = C[i1][j1];
+            }
+        }
+    }
+
 }
+
 
