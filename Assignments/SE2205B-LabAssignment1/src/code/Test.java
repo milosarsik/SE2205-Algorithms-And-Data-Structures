@@ -12,7 +12,7 @@ public class Test
         //int testPart = Integer.parseInt(args[0]);
 
         // this value here will vary for each different test, make sure to change
-        int testPart = 4;
+        int testPart = 1;
 
         Assignment1 a1 = new Assignment1();
 
