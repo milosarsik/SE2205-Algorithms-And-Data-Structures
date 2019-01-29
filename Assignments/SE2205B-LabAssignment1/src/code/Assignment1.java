@@ -1,3 +1,8 @@
+/*
+Milos Arsik - marsik - 250953645
+Cyriac Jinson - cjinson - 250957394
+*/
+
 package code;
 
 import java.io.File;
@@ -14,7 +19,7 @@ public class Assignment1
         // base case for when the matrices reach a size of 1x1
         if (size == 1)
         {
-            matrix[0][0] = A[0][0] * B[0][0];       // multiplying the two entries
+            matrix[0][0] = A[0][0] * B[0][0];               // multiplying the two entries
         }
         else
         {
@@ -44,18 +49,18 @@ public class Assignment1
 
             // these are the 7 matrices multiplications as follows
             int[][] M0 = denseMatrixMult(sum(A00, A11,0,0,0,0,size/2), sum(B00, B11,0,0,0,0,size/2),size/2);            // (A0,0 + A1,1) * (B0,0 + B1,1)
-            int[][] M1 = denseMatrixMult(sum(A10,A11,0,0,0,0,size/2),B00,size/2);                                                          // (A1,0 + A1,1)* (B0,0)
-            int[][] M2 = denseMatrixMult(A00, sub(B01, B11,0,0,0,0,size/2),size/2);                                                        // (A0,0) * (B0,1 − B1,1)
-            int[][] M3 = denseMatrixMult(A11, sub(B10, B00,0,0,0,0,size/2),size/2);                                                        // (A0,0) * (B0,1 − B1,1)
-            int[][] M4 = denseMatrixMult(sum(A00,A01,0,0,0,0,size/2), B11,size/2);                                                         // (A0,0 + A0,1) * (B1,1)
-            int[][] M5 = denseMatrixMult(sub(A10, A00,0,0,0,0,size/2), sum(B00, B01,0,0,0,0,size/2),size/2);            // (A1,0 − A0,0) * (B0,0 + B0,1)
-            int[][] M6 = denseMatrixMult(sub(A01, A11,0,0,0,0,size/2), sum(B10, B11,0,0,0,0,size/2), size/2);           // (A0,1 − A1,1)(B1,0 + B1,1)
+            int[][] M1 = denseMatrixMult(sum(A10,A11,0,0,0,0,size/2),B00,size/2);                                                           // (A1,0 + A1,1)* (B0,0)
+            int[][] M2 = denseMatrixMult(A00, sub(B01, B11,0,0,0,0,size/2),size/2);                                                          // (A0,0) * (B0,1 − B1,1)
+            int[][] M3 = denseMatrixMult(A11, sub(B10, B00,0,0,0,0,size/2),size/2);                                                           // (A0,0) * (B0,1 − B1,1)
+            int[][] M4 = denseMatrixMult(sum(A00,A01,0,0,0,0,size/2), B11,size/2);                                                             // (A0,0 + A0,1) * (B1,1)
+            int[][] M5 = denseMatrixMult(sub(A10, A00,0,0,0,0,size/2), sum(B00, B01,0,0,0,0,size/2),size/2);                // (A1,0 − A0,0) * (B0,0 + B0,1)
+            int[][] M6 = denseMatrixMult(sub(A01, A11,0,0,0,0,size/2), sum(B10, B11,0,0,0,0,size/2), size/2);                // (A0,1 − A1,1)(B1,0 + B1,1)
 
             // combine matrix multiplications from the previous block to calculate the resultant matrix C
             int[][] C11 = sum(sub(sum(M0, M3,0,0,0,0,size/2), M4,0,0,0,0,size/2), M6,0,0,0,0,size/2);     // M0 + M3 − M4 + M6
-            int[][] C12 = sum(M2, M4,0,0,0,0,size/2);                                                                                           // M2 + M4
-            int[][] C21 = sum(M1, M3,0,0,0,0,size/2);                                                                                           // M1 + M3
-            int[][] C22 = sum(sub(sum(M0, M2,0,0,0,0,size/2), M1,0,0,0,0,size/2), M5,0,0,0,0,size/2);    // M0 − M1 + M2 + M5
+            int[][] C12 = sum(M2, M4,0,0,0,0,size/2);                                                                                             // M2 + M4
+            int[][] C21 = sum(M1, M3,0,0,0,0,size/2);                                                                                              // M1 + M3
+            int[][] C22 = sum(sub(sum(M0, M2,0,0,0,0,size/2), M1,0,0,0,0,size/2), M5,0,0,0,0,size/2);        // M0 − M1 + M2 + M5
 
             // merges the C sub matrices
             mergeArray(C11, matrix, 0, 0);
@@ -67,7 +72,7 @@ public class Assignment1
     }
 
     // divideArray - splits the array
-    public static void divideArray(int[][] P, int[][] C, int iB, int jB)
+    public void divideArray(int[][] P, int[][] C, int iB, int jB)
     {
         for(int i1 = 0, i2 = iB; i1 < C.length; i1++, i2++)
             for(int j1 = 0, j2 = jB; j1 < C.length; j1++, j2++)
@@ -76,7 +81,7 @@ public class Assignment1
 
 
     // mergeArray - merges two arrays from the given starting positions
-    public static void mergeArray(int[][] C, int[][] P, int iB, int jB)
+    public void mergeArray(int[][] C, int[][] P, int iB, int jB)
     {
         for(int i1 = 0, i2 = iB; i1 < C.length; i1++, i2++)
         {
@@ -86,7 +91,6 @@ public class Assignment1
             }
         }
     }
-
 
     // sum - addition of two matrices
     public int[][] sum(int[][] A, int[][] B, int x1, int y1, int x2, int y2, int n)
@@ -158,7 +162,7 @@ public class Assignment1
         }
     }
 
-    // readMatrix - read the content of a data ﬁle called filename and store the content of this ﬁle in a 2D array of size n
+    // readMatrix - read the content of a data file called filename and store the content of this file in a 2D array of size n
     public int[][] readMatrix(String filename, int n) throws Exception
     {
         // creates scanner object called read
