@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86b237ee-da77-4ece-b0cc-87c8665b2f8e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Assignments/SE2205B-LabAssignment1/.idea/SE2205B-LabAssignment1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignments/SE2205B-LabAssignment1/.idea/SE2205B-LabAssignment1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignments/SE2205B-LabAssignment1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignments/SE2205B-LabAssignment1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignments/SE2205B-LabAssignment1/code/Assignment1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignments/SE2205B-LabAssignment1/code/Assignment1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Assignments/SE2205B-LabAssignment1/code/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Assignments/SE2205B-LabAssignment1/code/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Homework/Recursion/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Homework/Recursion/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Homework/Recursion/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Homework/Recursion/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/milosarsik/se2205labs/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/milosarsik/se2205labs/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/milosarsik/se2205labs/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="30" lean-forward="true" selection-start-column="30" selection-end-column="30" />
+            <state relative-caret-position="731">
+              <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -38,9 +37,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="952" />
-    <option name="width" value="977" />
-    <option name="height" value="1088" />
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1087" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -48,7 +47,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -60,6 +58,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -113,9 +112,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="952" y="0" width="977" height="1088" extended-state="0" />
+    <frame x="-7" y="0" width="974" height="1087" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10905126" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.032822758" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -124,7 +124,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32841823" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3312369" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -146,8 +146,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/milosarsik/se2205labs/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="30" lean-forward="true" selection-start-column="30" selection-end-column="30" />
+        <state relative-caret-position="731">
+          <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
         </state>
       </provider>
     </entry>
