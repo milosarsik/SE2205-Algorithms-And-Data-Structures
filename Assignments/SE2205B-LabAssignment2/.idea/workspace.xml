@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c8a6a32-91f4-495c-a92b-e55c833f788a" name="Default Changelist" comment="" />
+    <list default="true" id="8c8a6a32-91f4-495c-a92b-e55c833f788a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/LinkedListQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/Queue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/QueueSimulator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/SinglyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expOutput/Part1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expOutput/Part2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SE2205B-LabAssignment1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SE2205B-LabAssignment1/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SE2205B-LabAssignment1/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SE2205B-LabAssignment1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SE2205B-LabAssignment1/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SE2205B-LabAssignment1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SE2205B-LabAssignment1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SE2205B-LabAssignment1/SE2205B-LabAssignment1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SE2205B-LabAssignment1/out/production/SE2205B-LabAssignment1/META-INF/SE2205B-LabAssignment1.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SE2205B-LabAssignment1/out/production/SE2205B-LabAssignment1/code/Assignment1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SE2205B-LabAssignment1/out/production/SE2205B-LabAssignment1/code/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SE2205B-LabAssignment1/out/production/SE2205B-LabAssignment1/expOutput/Part1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SE2205B-LabAssignment1/out/production/SE2205B-LabAssignment1/expOutput/Part2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SE2205B-LabAssignment1/out/production/SE2205B-LabAssignment1/expOutput/Part3_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SE2205B-LabAssignment1/out/production/SE2205B-LabAssignment1/expOutput/Part3_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SE2205B-LabAssignment1/out/production/SE2205B-LabAssignment1/expOutput/Part4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SE2205B-LabAssignment1/out/production/SE2205B-LabAssignment1/matrix1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SE2205B-LabAssignment1/out/production/SE2205B-LabAssignment1/matrix2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SE2205B-LabAssignment1/src/code/Assignment1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SE2205B-LabAssignment1/src/code/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SE2205B-LabAssignment1/src/expOutput/Part1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SE2205B-LabAssignment1/src/expOutput/Part2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SE2205B-LabAssignment1/src/expOutput/Part3_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SE2205B-LabAssignment1/src/expOutput/Part3_2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SE2205B-LabAssignment1/src/expOutput/Part4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SE2205B-LabAssignment1/src/matrix1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SE2205B-LabAssignment1/src/matrix2.txt" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,20 +47,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/Test.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/code/QueueSimulator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="57" lean-forward="true" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
+            <state relative-caret-position="204">
+              <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/code/QueueSimulator.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/expOutput/Part1.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+            <state relative-caret-position="51">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -35,12 +69,15 @@
         <entry file="file://$PROJECT_DIR$/expOutput/Part2.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -53,8 +90,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
+    <option name="x" value="-7" />
+    <option name="width" value="975" />
     <option name="height" value="1087" />
   </component>
   <component name="ProjectView">
@@ -62,7 +99,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -85,6 +121,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -121,16 +158,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1087" extended-state="0" />
+    <frame x="-7" y="0" width="975" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22210066" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.20437159" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -150,6 +188,34 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20437159" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="0" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Run" order="3" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/code/LinkedListQueue.java">
@@ -178,9 +244,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/Queue.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/SinglyLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="73">
@@ -200,19 +263,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/expOutput/Part1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/Data.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/QueueSimulator.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/code/Data.class" />
+    <entry file="file://$PROJECT_DIR$/code/QueueSimulator.class" />
     <entry file="file://$PROJECT_DIR$/code/Data.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -230,24 +282,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/code/Queue.class" />
+    <entry file="file://$PROJECT_DIR$/expOutput/Part1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/expOutput/Part2.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/code/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="57" lean-forward="true" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
+        <state relative-caret-position="-502">
+          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/code/QueueSimulator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+        <state relative-caret-position="204">
+          <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
         </state>
       </provider>
     </entry>
