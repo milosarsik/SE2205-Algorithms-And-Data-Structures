@@ -35,6 +35,7 @@ public class QueueSimulator
   {
     int sz = 0;
     double time = 0;
+    double returnValue;
 
     while(!eventQueue.isEmpty())
     {
@@ -43,7 +44,9 @@ public class QueueSimulator
       sz++;
     }
 
-    return time / sz;
+    returnValue = time/sz;
+
+    return returnValue;
   }
   
   public double runSimulation()
@@ -55,9 +58,12 @@ public class QueueSimulator
     {
       if(timeForNextArrival < timeForNextDeparture || buffer.isEmpty())
       {
-        currTime += timeForNextArrival;
         Data temp = new Data();
+
+        currTime = currTime + timeForNextArrival;
+
         temp.setArrivalTime(currTime);
+
         buffer.enqueue(temp);
 
         timeForNextDeparture = timeForNextDeparture - timeForNextArrival;
@@ -65,10 +71,12 @@ public class QueueSimulator
       }
       else
       {
+        currTime = currTime + timeForNextDeparture;
 
-        currTime += timeForNextDeparture;
         Data temp = buffer.dequeue();
+
         temp.setDepartureTime(currTime);
+
         eventQueue.enqueue(temp);
 
         timeForNextArrival = timeForNextArrival - timeForNextDeparture;
