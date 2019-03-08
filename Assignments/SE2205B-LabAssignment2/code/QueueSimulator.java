@@ -28,7 +28,6 @@ public class QueueSimulator
     arrivalRate = aR;
     serviceTime = servT;
     totalSimTime = simT;
-    currTime = 0;
   }
   
   public double calcAverageWaitingTime()
@@ -51,6 +50,7 @@ public class QueueSimulator
   
   public double runSimulation()
   {
+    currTime = 0;
     timeForNextArrival = getRandTime(arrivalRate);
     timeForNextDeparture = serviceTime + timeForNextArrival;
 
@@ -58,9 +58,9 @@ public class QueueSimulator
     {
       if(timeForNextArrival < timeForNextDeparture || buffer.isEmpty())
       {
-        Data temp = new Data();
-
         currTime = currTime + timeForNextArrival;
+
+        Data temp = new Data();
 
         temp.setArrivalTime(currTime);
 
