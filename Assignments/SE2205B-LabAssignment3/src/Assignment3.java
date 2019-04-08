@@ -67,19 +67,37 @@ public class Assignment3
         {
 
             int pathFlow = Integer.MAX_VALUE;
-            for (b=t; b!=s; b=parent[b])
-            {
-                a = parent[b];
-                pathFlow = Math.min(pathFlow, resGraph[a][b]);
-            }
+             
+             b=t;
+             while(b != s)
+             {
+                  a = parent[b];
+                  pathFlow = Math.min(pathFlow, resGraph[a][b]);
+                  b=parent[b]
+             }
+           
+//             for (b=t; b!=s; b=parent[b])
+//             {
+//                 a = parent[b];
+//                 pathFlow = Math.min(pathFlow, resGraph[a][b]);
+//             }
 
 
-            for (b=t; b != s; b=parent[b])
-            {
-                a = parent[b];
-                resGraph[a][b] =resGraph[a][b]- pathFlow;
-                resGraph[b][a] =resGraph[b][a]+ pathFlow;
-            }
+             b=t;
+             while(b != s)
+             {
+                  a = parent[b];
+                  resGraph[a][b] =resGraph[a][b]- pathFlow;
+                  resGraph[b][a] =resGraph[b][a]+ pathFlow;
+                  b=parent[b]
+             }
+             
+//             for (b=t; b != s; b=parent[b])
+//             {
+//                 a = parent[b];
+//                 resGraph[a][b] =resGraph[a][b]- pathFlow;
+//                 resGraph[b][a] =resGraph[b][a]+ pathFlow;
+//             }
 
             maxFlow = maxFlow+ pathFlow;
         }
