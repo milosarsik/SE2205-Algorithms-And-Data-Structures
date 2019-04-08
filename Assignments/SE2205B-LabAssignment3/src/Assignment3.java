@@ -58,9 +58,20 @@ public class Assignment3
 
         int resGraph[][] = new int[vertex][vertex];
         int a, b;
-        for (a = 0; a < vertex; a++)
-            for (b = 0; b < vertex; b++)
+
+        a=0;
+        b=0;
+        while(a < vertex)
+        {
+            b=0;
+            while(b<vertex)
+            {
                 resGraph[a][b] = graph[a][b];
+                b++;
+            }
+            a++;
+        }
+
         int maxFlow = 0;
         int parent[] = new int[vertex];
 
