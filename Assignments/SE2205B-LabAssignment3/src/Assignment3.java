@@ -53,9 +53,6 @@ public class Assignment3
 
     public int maximizeFlowNetwork(int graph[][], int s, int t)    //max flow
     {
-
-
-
         int resGraph[][] = new int[vertex][vertex];
         int a, b;
 
@@ -75,37 +72,31 @@ public class Assignment3
         int maxFlow = 0;
         int parent[] = new int[vertex];
 
-
-
-
         while (breadthFirstPathSearch(resGraph, s, t, parent) == 1)
         {
 
             int pathFlow = Integer.MAX_VALUE;
              
-             b=t;
-             while(b != s)
-             {
-                  a = parent[b];
-                  pathFlow = Math.min(pathFlow, resGraph[a][b]);
-                  b=parent[b];
-             }
+            b=t;
+            while(b != s)
+            {
+                a = parent[b];
+                pathFlow = Math.min(pathFlow, resGraph[a][b]);
+                b=parent[b];
+            }
            
-             b=t;
-             while(b != s)
-             {
-                  a = parent[b];
-                  resGraph[a][b] =resGraph[a][b]- pathFlow;
-                  resGraph[b][a] =resGraph[b][a]+ pathFlow;
-                  b=parent[b];
-             }
+            b=t;
+            while(b != s)
+            {
+                a = parent[b];
+                resGraph[a][b] =resGraph[a][b]- pathFlow;
+                resGraph[b][a] =resGraph[b][a]+ pathFlow;
+                b=parent[b];
+            }
              
             maxFlow = maxFlow+ pathFlow;
         }
 
-
         return maxFlow;
-
     }
-
 }
