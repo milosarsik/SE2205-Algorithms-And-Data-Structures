@@ -8,7 +8,8 @@ public class Assignment3
     {
         int reached[] = new int[vertex];
         int count=0;
-        while(count < vertex)
+        
+         while(count < vertex)
         {
             reached[count] = 0;
             count++;
@@ -23,15 +24,27 @@ public class Assignment3
         {
             int temp = q.poll();
 
-            for(int v=0; v < vertex; v++)
+            int vtemp = 0;
+            while(vtemp < vertex)
             {
-                if(reached[v]==0 && graph[temp][v] > 0)
-                {
-                    q.add(v);
-                    parent[v] = temp;
-                    reached[v] = 1;
-                }
-            }
+                 if(reached[v]==0 && graph[temp][v] > 0)
+                 {
+                      q.add(v);
+                      parent[v] = temp;
+                      reached[v] = 1;
+                 }
+                       
+                 vtemp++;
+             }
+//             for(int v=0; v < vertex; v++)
+//             {
+//                 if(reached[v]==0 && graph[temp][v] > 0)
+//                 {
+//                     q.add(v);
+//                     parent[v] = temp;
+//                     reached[v] = 1;
+//                 }
+//             }
         }
 
         if(reached[d] == 1)
