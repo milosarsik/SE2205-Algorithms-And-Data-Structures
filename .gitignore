@@ -5,6 +5,11 @@
 ### Java ###
 # Compiled class file
 *.class
+*.idea/workspace.xml
+*.idea/tasks.xml
+*.idea/dictionaries
+*.idea/vcs.xml
+*.idea/jsLibraryMappings.xml
 
 # Log file
 *.log
