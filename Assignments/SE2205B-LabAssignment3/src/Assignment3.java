@@ -27,24 +27,15 @@ public class Assignment3
             int vtemp = 0;
             while(vtemp < vertex)
             {
-                 if(reached[v]==0 && graph[temp][v] > 0)
+                 if(reached[vtemp]==0 && graph[temp][vtemp] > 0)
                  {
-                      q.add(v);
-                      parent[v] = temp;
-                      reached[v] = 1;
+                      q.add(vtemp);
+                      parent[vtemp] = temp;
+                      reached[vtemp] = 1;
                  }
                        
                  vtemp++;
              }
-//             for(int v=0; v < vertex; v++)
-//             {
-//                 if(reached[v]==0 && graph[temp][v] > 0)
-//                 {
-//                     q.add(v);
-//                     parent[v] = temp;
-//                     reached[v] = 1;
-//                 }
-//             }
         }
 
         if(reached[d] == 1)
