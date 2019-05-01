@@ -1,8 +1,3 @@
-/*
-Milos Arsik - marsik - 250953645
-Cyriac Jinson - cjinson - 250957394
-*/
-
 import java.io.*;
 import java.io.File;
 import java.util.Scanner;
